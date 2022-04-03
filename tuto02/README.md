@@ -61,3 +61,9 @@ terraform destroy
 
 open http://localhost:8888
 ```
+
+``` shell
+# googleバージョンアップ
+terraform init -upgrade
+
+```
