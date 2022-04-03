@@ -44,8 +44,17 @@ cat ${GOOGLE_APPLICATION_CREDENTIALS}
 # 初期化
 terraform init
 
+# フォーマット
+terraform fmt
+
+# 検証
+terraform validate
+
 # デプロイ
 terraform apply
+
+# 状態確認
+terraform show
 
 # 削除
 terraform destroy

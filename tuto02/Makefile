@@ -7,5 +7,8 @@ plan:
 apply:
 	terraform apply
 
+show:
+	terraform show
+
 destroy:
 	terraform destroy
