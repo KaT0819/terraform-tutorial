@@ -1,6 +1,9 @@
 
 .terraform/
+*.tfstate
 
 *.backup
 
 *.exe
+
+**/credential.json

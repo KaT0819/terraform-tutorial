@@ -7,6 +7,10 @@ terraform {
   }
 }
 
+# for Mac or Linux
+# provider "docker" {}
+
+# for Windows
 provider "docker" {
   host = "npipe:////.//pipe//docker_engine"
 }
