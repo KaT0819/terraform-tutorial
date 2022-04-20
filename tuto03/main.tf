@@ -13,19 +13,20 @@ terraform {
 }
 
 provider "aws" {
-#   shared_credentials_file = "$HOME/.aws/credentials"
-#   profile                 = "terraform"
-    region = "ap-northeast-1"
-    access_key = var.aws_access_key
-    secret_key = var.aws_secret_key
+  #   shared_credentials_file = "$HOME/.aws/credentials"
+  #   profile                 = "terraform"
+  region     = "ap-northeast-1"
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
 }
 
 resource "aws_instance" "app_server" {
-#   ami           = "ami-830c94e3" # us-west-2 のAMI
-  ami           = "ami-0a3d21ec6281df8cb"
+  #   ami           = "ami-830c94e3" # us-west-2 のAMI
+  # ami = "ami-0a3d21ec6281df8cb"
+  ami           = "ami-088da9557aae42f39" # ubuntu
   instance_type = "t2.micro"
 
   tags = {
-    Name = "ExampleAppServerInstance"
+    Name = var.instance_name
   }
 }

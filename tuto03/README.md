@@ -13,28 +13,40 @@ cp ./terraform.tfvars.sample ./terraform.tfvars
 
 # terraform.tfvarsにアクセスキー、シークレットキーを設定
 
-```
-
-### デプロイ
-``` shell
 # 初期化
 terraform init
 
+```
+
+### 検証
+``` shell
 # フォーマット
 terraform fmt
 
 # 検証
 terraform validate
 
+```
+
+### デプロイ
+``` shell
 # デプロイ
 terraform apply
+```
 
-# 状態確認
+### 状態確認
+``` shell
 terraform show
 
-# 状態確認
 terraform state list
 ```
+
+
+### パラメータを指定したデプロイ
+``` shell
+terraform apply -var "instance_name=YetAnotherName"
+```
+
 
 # Appendix
 ## コマンド

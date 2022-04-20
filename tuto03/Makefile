@@ -1,20 +1,20 @@
-init:
+i:
 	terraform init
 
-fmt:
+f:
 	terraform fmt
 
-validate:
+v:
 	terraform validate
 
-plan:
+p:
 	terraform plan
 
-apply:
+a:
 	terraform apply
 
-show:
+s:
 	terraform show
 
-destroy:
+d:
 	terraform destroy
